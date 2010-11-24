@@ -1,0 +1,29 @@
+<h3>getgames</h3>
+<br /><br />
+<table>
+  <tr>
+    <td>player</td>
+    <td>pos</td>
+    <td>min</td>
+    <td>fg</td>
+    <td>3p</td>
+    <td>ft</td>
+    <td>+/-</td>
+    <td>off</td>
+    <td>reb</td>
+    <td>ass</td>
+    <td>to</td>
+    <td>stl</td>
+    <td>bs</td>
+    <td>ba</td>
+    <td>pf</td>
+    <td>pts</td>
+  </tr>
+  <% for i in  @playersdata %>
+    <tr>
+      <% for j in i %>
+        <td><%= j %></td> 
+      <% end %>
+    </tr>
+  <% end %>
+</table>

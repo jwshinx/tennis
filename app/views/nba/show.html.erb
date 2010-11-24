@@ -1,0 +1,25 @@
+<p>
+  <b>Name:</b>
+  <%=h @performance.name %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%=h @performance.position %>
+</p>
+
+<p>
+  <b>Pts:</b>
+  <%=h @performance.pts %>
+</p>
+<p>
+  <b>ORB/RB:</b>
+  <%=h @performance.orb %>-<%=h @performance.rb %>
+</p>
+<p>
+  <b>ASS/TO/STL/BS</b>
+  <%=h @performance.ass %>-<%=h @performance.to %>-<%=h @performance.stl %>-<%=h @performance.bs %>
+</p>
+
+
+<%= link_to 'Back to All', :controller => 'nba', :action => 'index' %>

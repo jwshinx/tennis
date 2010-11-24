@@ -1,0 +1,25 @@
+<h1>mergesort: pts</h1>
+<br /><br/>
+<%=h @msptstime %> : mspts method runtime<br />
+<%=h @sorttime %> : merge sort by pts<br />
+<br /><br />
+<p><%= flash[:notice] %></p><br />
+
+count:&nbsp;<%=h @sortedperformances.length %><br /><br />
+<table>
+  <% for performance in @sortedperformances %>
+    <tr>
+      <td><%=h performance.name %></td>
+      <td><%=h performance.pts %></td>
+      <td>
+        <%= link_to 'Show', performance %>
+      </td>
+      <td>
+        <%= link_to 'Edit', edit_performance_path(performance) %>
+      </td>
+      <td>
+        <%= link_to 'Destroy', performance, :confirm => 'Are you sure?', :method => :delete %>
+      </td>
+    </tr>
+  <% end %>
+</table>

@@ -1,0 +1,16 @@
+<h1>counting sort: pts</h1>
+<br /><br/>
+<%=h @csptstime %> : cspts method runtime<br />
+<%=h @sorttime %> : counting sort by pts<br />
+<br /><br />
+<p><%= flash[:notice] %></p><br />
+
+count:&nbsp;<%=h @sortedperformances.length %><br /><br />
+<table>
+  <% for performance in @sortedperformances %>
+    <tr>
+      <td><%=h performance.name %></td>
+      <td><%=h performance.pts %></td>
+    </tr>
+  <% end %>
+</table>

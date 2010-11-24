@@ -1,0 +1,14 @@
+<h3>getgames</h3>
+<br /><br />
+<% if @filesarray.empty? %>
+  <p>no files to read</p> 
+<% else %>
+  number of files read: <%=h @filesarray.length %><br />
+  <% for file in @filesarray %>
+    <%=h file %><br />
+  <% end %>
+<% end %>
+<br />
+<p><%= @rowsuploaded %> records uploaded.</p>
+<br /><br />
+<p><%= flash[:notice] %></p>

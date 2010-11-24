@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Posts: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'scaffold' %>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="sidebar">
+      <span>sidebar</span><br />
+      <div id="menu">
+        <ul>
+          <li>
+            <%= link_to 'blog', :controller => 'posts', :action => 'index' %> 
+          </li>
+          <li>
+            <%= link_to 'nba', :controller => 'nba', :action => 'index' %> 
+          </li>
+          <li>
+            <%= link_to 'top scorers', :controller => 'nba', :action => 'top_scorers' %> 
+          </li>
+          <li>
+            <%= link_to 'top rebounders', :controller => 'nba', :action => 'top_rebounders' %> 
+          </li>
+          <li>
+            <%= link_to 'ms:pts', :controller => 'nba', :action => 'mspts' %> 
+          </li>
+          <li>
+            <%= link_to 'qs:pts', :controller => 'nba', :action => 'qspts' %> 
+          </li>
+          <li>
+            <%= link_to 'cs:pts', :controller => 'nba', :action => 'cspts' %> 
+          </li>
+          <li>
+            four
+          </li>
+          <li>
+            <%= link_to 'admin', :controller => 'nba', :action => 'index' %> 
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="page">
+      <%= yield  %>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<h1>top scorers</h1>
+<br /><br />
+<%= render :partial => 'top_passers' %>
+<br /><br />
+<% if @best.empty? %>
+  <p>no performance with 20 points and greater.</p>
+<% else %>
+  <table>
+    <% for item in @best %>
+      <tr>
+        <td><%=h item.name %></td>
+        <td><%=h item.pts %></td>
+        <td><%=h item.game %></td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>
+<br /><br />
+<p><%= flash[:notice] %></p>

@@ -1,0 +1,18 @@
+<h1>top rebounders</h1>
+<br /><br/>
+<% if @best.empty? %>
+  <p>no performance to denote.</p>
+<% else %>
+  <table>
+    <% for item in @best %>
+      <tr>
+        <td><%=h item.name %></td>
+        <td><%=h item.orb %></td>
+        <td><%=h item.rb %></td>
+        <td><%=h item.game %></td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>
+<br /><br />
+<p><%= flash[:notice] %></p>

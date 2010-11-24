@@ -1,0 +1,9 @@
+<h1>Posts</h1>
+<%= will_paginate @posts %>
+<div id="posts-area">
+  <%= render :partial => "post", :collection => @posts %>
+</div>
+
+<%= render :partial => 'recent_posts' %>
+
+<%= link_to 'New post', new_post_path %>

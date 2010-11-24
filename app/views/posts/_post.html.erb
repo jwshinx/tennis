@@ -1,0 +1,10 @@
+<div class="posts-row">
+  <div id="name"><%=h post.name %></div>
+  <div id="title"><%=h post.title %></div>
+  <div id="content"><%=h post.content %></div>
+  <div id="actions">
+    <%= link_to 'Show', post %>
+    <%= link_to 'Edit', edit_post_path(post) %>
+    <%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %>
+  </div>
+</div>

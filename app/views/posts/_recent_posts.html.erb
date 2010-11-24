@@ -1,0 +1,10 @@
+<% cache(:recent_posts) do %>
+<div id="recent-posts">
+  <h4>recent posts</h4>
+  <ul>
+    <% @recent_posts.each do |post| %>
+      <li><%= link_to post.name, post %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>

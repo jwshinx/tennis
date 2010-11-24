@@ -1,0 +1,10 @@
+<div class="performances-row">
+  <div>
+    <%=h performance.id %>&nbsp;
+    <%=h performance.name %>&nbsp;
+    <%=h performance.pts %>&nbsp;
+    <%=h performance.rb %>&nbsp;
+    <%=h performance.game %>&nbsp;
+    <%= link_to 'Show', :controller => 'nba', :action => 'show', :id => performance %>&nbsp;
+  </div>
+</div>

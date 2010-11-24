@@ -1,0 +1,7 @@
+<div id="top-passers">
+  <ul>
+    <% @top_passers.each do |perf| %>
+      <li><%=h perf.name %> - <%=h perf.ass %> - <%=h perf.game %></li>
+    <% end %>
+  </ul>
+</div>
